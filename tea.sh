@@ -19,4 +19,4 @@ if [ "$#" -lt 1 ]; then
     exit 1
 fi
 for i; do wait $i; done
-eject
+notify-send -a tea -i task-attempt "Tea is ready" "Hurray!!!"
