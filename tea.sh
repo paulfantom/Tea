@@ -25,6 +25,6 @@ if [ "$#" -lt 1 ]; then
 fi
 
 for i; do wait $i; done
-eject
+eject 2> /dev/null
 notify-send -a tea -i task-attempt "Tea is ready" "Hurray!!!"
 paplay /usr/share/sounds/freedesktop/stereo/bell.oga
